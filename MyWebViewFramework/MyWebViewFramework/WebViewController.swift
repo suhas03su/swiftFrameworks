@@ -10,8 +10,7 @@ import UIKit
 import WebKit
 
 class WebViewController: UIViewController, WKUIDelegate, UIScrollViewDelegate {
-
-    @IBOutlet weak var headerLabelHeightConstraint: NSLayoutConstraint!
+    
     @IBOutlet weak var webViewTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var headerViewHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var headerLabel: UILabel!
@@ -34,16 +33,9 @@ class WebViewController: UIViewController, WKUIDelegate, UIScrollViewDelegate {
             let contentOffsetValue = value - scrollView.contentOffset.y
             self.headerViewHeightConstraint.constant = contentOffsetValue
             self.webViewTopConstraint.constant = contentOffsetValue
-            if scrollView.contentOffset.y >= 23 {
-                let difference = 40.0 - scrollView.contentOffset.y
-                self.headerLabelHeightConstraint.constant = difference
-            } else {
-                self.headerLabelHeightConstraint.constant = 17.0
-            }
         } else {
             self.headerViewHeightConstraint.constant = 0.0
             self.webViewTopConstraint.constant = 0.0
-            self.headerLabelHeightConstraint.constant = 0.0
         }
     }
 
