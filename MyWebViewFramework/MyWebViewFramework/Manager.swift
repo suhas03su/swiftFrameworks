@@ -2,8 +2,12 @@ import Foundation
 import UIKit
 
 public class Manager {
-    public init() {}
-    public var headerData: String = ""
+    
+    var headerData: String = ""
+    
+    public init(headerData: String) {
+        self.headerData = headerData
+    }
     
     public func viewController() -> UIViewController {
         let bundle = Bundle(for: WebViewController.self)

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,8 +11,8 @@
 		AD0595FC247909E40066C856 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0595FB247909E40066C856 /* SceneDelegate.swift */; };
 		AD059603247909E50066C856 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD059602247909E50066C856 /* Assets.xcassets */; };
 		AD059606247909E50066C856 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD059604247909E50066C856 /* LaunchScreen.storyboard */; };
-		ADB9B749247ADEFF00591DB6 /* MyWebViewFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADB9B747247ADEDF00591DB6 /* MyWebViewFramework.framework */; };
-		ADB9B74A247ADEFF00591DB6 /* MyWebViewFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ADB9B747247ADEDF00591DB6 /* MyWebViewFramework.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AD790EA2247E8335009D96C6 /* MyWebViewFramework.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD790EA0247E8330009D96C6 /* MyWebViewFramework.xcframework */; };
+		AD790EA3247E8335009D96C6 /* MyWebViewFramework.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AD790EA0247E8330009D96C6 /* MyWebViewFramework.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -22,7 +22,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				ADB9B74A247ADEFF00591DB6 /* MyWebViewFramework.framework in Embed Frameworks */,
+				AD790EA3247E8335009D96C6 /* MyWebViewFramework.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -36,7 +36,7 @@
 		AD059602247909E50066C856 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD059605247909E50066C856 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD059607247909E50066C856 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ADB9B747247ADEDF00591DB6 /* MyWebViewFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MyWebViewFramework.framework; sourceTree = "<group>"; };
+		AD790EA0247E8330009D96C6 /* MyWebViewFramework.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = MyWebViewFramework.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADB9B749247ADEFF00591DB6 /* MyWebViewFramework.framework in Frameworks */,
+				AD790EA2247E8335009D96C6 /* MyWebViewFramework.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,7 +70,7 @@
 		AD0595F8247909E40066C856 /* AppOne */ = {
 			isa = PBXGroup;
 			children = (
-				ADB9B747247ADEDF00591DB6 /* MyWebViewFramework.framework */,
+				AD790EA0247E8330009D96C6 /* MyWebViewFramework.xcframework */,
 				AD0595F9247909E40066C856 /* AppDelegate.swift */,
 				AD0595FB247909E40066C856 /* SceneDelegate.swift */,
 				AD059602247909E50066C856 /* Assets.xcassets */,

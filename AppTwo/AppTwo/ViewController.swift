@@ -17,6 +17,7 @@ class ViewController: UIViewController {
     
     @IBAction func openAppOneTapped(_ sender: Any) {
         if (UIApplication.shared.canOpenURL(URL(string:"comappone://")!)) {
+//            UIApplication.shared.open(URL(string:"comappone://")!, options: [:], completionHandler: nil)
             UIApplication.shared.openURL(URL(string:"comappone://")!)
         }
     }

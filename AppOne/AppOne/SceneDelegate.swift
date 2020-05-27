@@ -20,13 +20,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = (scene as? UIWindowScene) else { return }
         self.window = UIWindow(windowScene: windowScene)
-        let manager = Manager()
+        var vc = UIViewController()
         if (connectionOptions.urlContexts.first?.url) != nil {
-            manager.headerData = "Opened From Second App"
+            let manager = Manager(headerData: "Opened From Second App")
+            vc = manager.viewController()
         } else {
-            manager.headerData = "Opened From Home Screen"
+            let manager = Manager(headerData: "Opened From Home Screen")
+            vc = manager.viewController()
         }
-        let vc = manager.viewController()
         self.window?.rootViewController = vc
         self.window?.makeKeyAndVisible()
         
@@ -36,8 +37,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         self.window = UIWindow(windowScene: windowScene)
-        let manager = Manager()
-        manager.headerData = "Opened From Second App"
+        let manager = Manager(headerData: "Opened From Second App")
         let vc = manager.viewController()
         self.window?.rootViewController = vc
         self.window?.makeKeyAndVisible()
